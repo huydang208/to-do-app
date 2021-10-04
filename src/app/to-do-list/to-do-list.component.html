@@ -1,0 +1,31 @@
+<h1 class="mt-5 mb-4">TO DO LIST</h1>
+
+<form class="form" (ngSubmit)="add()">
+  <input
+    type="text"
+    class="form-control"
+    [(ngModel)]="taskName"
+    name="taskName"
+    placeholder="Input to do..."/>
+
+  <button class="px-3 h-1 enter">
+    <i class="fas fa-plus-circle fs-3"></i>
+  </button>
+</form>
+
+<div class="d-flex justify-content-center">
+  <ul>
+    <li *ngFor="let task of tasks; let id = index"
+        [ngClass]="task.isCompleted ? 'done' : ''"
+        (click)="toggleComplete(id)">
+
+      <span [ngClass]="task.isCompleted ? 'completed' : ''">
+        {{task.name}}
+      </span>
+
+      <button (click)="delete(id, $event)">
+        <i class="fas fa-times"></i>
+      </button>
+    </li>
+  </ul>
+</div>

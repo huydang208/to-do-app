@@ -1,0 +1,75 @@
+h1 {
+  font-family: cursive;
+  color: #dc3545;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  width: 40%;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.enter{
+  background: none;
+  border: none;
+  color: #07689F;
+  cursor: pointer;
+}
+
+.enter:active {
+  opacity: 0.6;
+}
+
+ul {
+  text-align: left;
+  margin-top: 20px;
+  padding: 0;
+}
+
+li {
+  width: 50vw;
+  list-style: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background: #87ceeb;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li span {
+  width: 90%;
+  color: #ffffff;
+  font-size: 26px;
+  font-family: monospace;
+  word-break: break-word;
+  line-height: 44px;
+}
+
+li > button {
+  height: 10%;
+  background: none;
+  border: none;
+  color: #025f70;
+  font-weight: 800;
+  font-size: 28px;
+  cursor: pointer;
+  float: right;
+}
+
+.done {
+  background-color: #adff2f;
+}
+
+.completed::after {
+  content: "(Completed)";
+}
