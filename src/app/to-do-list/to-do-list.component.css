@@ -55,7 +55,7 @@ li span {
   line-height: 44px;
 }
 
-li > button {
+li button {
   height: 10%;
   background: none;
   border: none;
